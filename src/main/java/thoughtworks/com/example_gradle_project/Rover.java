@@ -1,14 +1,11 @@
 package thoughtworks.com.example_gradle_project;
 
-/**
- * Created by saylerb on 3/27/17.
- */
 public class Rover {
     private int x;
     private int y;
-    private String orientation;
+    private Orientation orientation;
 
-    public Rover(int x, int y, String orientation) {
+    public Rover(int x, int y, Orientation orientation) {
 
         this.x = x;
         this.y = y;
@@ -16,21 +13,21 @@ public class Rover {
     }
 
     public void report() {
-        System.out.println(x + " " + y + " " + orientation);
+        System.out.println(String.format("%s, %s, %s", x, y, orientation));
     }
 
     public void moveForward() {
         switch (orientation) {
-            case "N":
+            case N:
                 y++;
                 break;
-            case "E":
+            case E:
                 x++;
                 break;
-            case "S":
+            case S:
                 y--;
                 break;
-            case "W":
+            case W:
                 x--;
                 break;
             default:
