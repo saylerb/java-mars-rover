@@ -20,16 +20,16 @@ public class Rover {
 
     public void moveForward() {
         switch (orientation) {
-            case N:
+            case NORTH:
                 y++;
                 break;
-            case E:
+            case EAST:
                 x++;
                 break;
-            case S:
+            case SOUTH:
                 y--;
                 break;
-            case W:
+            case WEST:
                 x--;
                 break;
             default:
@@ -39,17 +39,17 @@ public class Rover {
     }
     public void turnRight() {
         switch (orientation) {
-            case N:
-                orientation = E;
+            case NORTH:
+                orientation = EAST;
                 break;
-            case E:
-                orientation = S;
+            case EAST:
+                orientation = SOUTH;
                 break;
-            case S:
-                orientation = W;
+            case SOUTH:
+                orientation = WEST;
                 break;
-            case W:
-                orientation = N;
+            case WEST:
+                orientation = NORTH;
                 break;
             default:
                 throw new RuntimeException();

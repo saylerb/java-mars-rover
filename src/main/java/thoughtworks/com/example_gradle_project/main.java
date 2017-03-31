@@ -3,10 +3,10 @@ package thoughtworks.com.example_gradle_project;
 public class main {
 
     public static void main(String[] args) {
-        createAndMoveRover(Orientation.N);
-        createAndMoveRover(Orientation.E);
-        createAndMoveRover(Orientation.S);
-        createAndMoveRover(Orientation.W);
+        createAndMoveRover(Orientation.NORTH);
+        createAndMoveRover(Orientation.EAST);
+        createAndMoveRover(Orientation.SOUTH);
+        createAndMoveRover(Orientation.WEST);
     }
 
     public static void createAndMoveRover(Orientation orientation) {
