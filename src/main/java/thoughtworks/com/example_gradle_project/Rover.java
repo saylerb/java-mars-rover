@@ -1,5 +1,7 @@
 package thoughtworks.com.example_gradle_project;
 
+import static thoughtworks.com.example_gradle_project.Orientation.*;
+
 public class Rover {
     private int x;
     private int y;
@@ -33,5 +35,25 @@ public class Rover {
             default:
                 throw new RuntimeException();
         }
+
+    }
+    public void turnRight() {
+        switch (orientation) {
+            case N:
+                orientation = E;
+                break;
+            case E:
+                orientation = S;
+                break;
+            case S:
+                orientation = W;
+                break;
+            case W:
+                orientation = N;
+                break;
+            default:
+                throw new RuntimeException();
+        }
+
     }
 }

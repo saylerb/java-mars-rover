@@ -18,8 +18,12 @@ public class main {
 
         System.out.println("Moving forward...");
         rover.moveForward();
-
         rover.report();
+
+        System.out.println("Turning right...");
+        rover.turnRight();
+        rover.report();
+
         System.out.println();
     }
 
