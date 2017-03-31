@@ -13,4 +13,20 @@ public class Coordinate {
     public void print() {
         System.out.print(x + " " + y + " ");
     }
+
+    public void moveNorth() {
+        y++;
+    }
+
+    public void moveEast() {
+        x++;
+    }
+
+    public void moveSouth() {
+        y--;
+    }
+
+    public void moveWest() {
+        x--;
+    }
 }
