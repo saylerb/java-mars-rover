@@ -11,7 +11,7 @@ public class main {
 
     public static void createAndMoveRover(Orientation orientation) {
 
-        Rover rover = new Rover(1, 2, orientation);
+        Rover rover = new Rover(new Coordinate(1, 2), orientation);
 
         System.out.println("Starting location and orientation:");
         rover.report();

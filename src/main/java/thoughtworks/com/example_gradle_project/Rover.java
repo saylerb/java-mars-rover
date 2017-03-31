@@ -5,17 +5,20 @@ import static thoughtworks.com.example_gradle_project.Orientation.*;
 public class Rover {
     private int x;
     private int y;
+    private Coordinate position;
     private Orientation orientation;
 
-    public Rover(int x, int y, Orientation orientation) {
+    public Rover(Coordinate position, Orientation orientation) {
 
+        this.position = position;
         this.x = x;
         this.y = y;
         this.orientation = orientation;
     }
 
     public void report() {
-        System.out.println(String.format("%s, %s, %s", x, y, orientation));
+        position.print();
+        System.out.println(orientation);
     }
 
     public void moveForward() {
